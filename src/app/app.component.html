@@ -1,0 +1,175 @@
+<div class="tw-grid tw-grid-cols-6">
+  <div class="tw-col-span-1 tw-bg-accent">
+    <div class="tw-bg-accent tw-h-full tw-flex tw-flex-col">
+      <img
+        class="tw-w-24 tw-mx-auto tw-p-2"
+        src="https://www.staging.jobjack.co.za/assets/logo/icon-white.png"
+        alt=""
+      />
+      <div
+        class="tw-border-solid tw-border-2 tw-border-primary tw-mx-8 tw-my-4"
+      ></div>
+      <div
+        class="tw-border-solid tw-border-2 tw-border-primary tw-mx-8 tw-my-4"
+      ></div>
+      <div
+        class="tw-border-solid tw-border-2 tw-border-primary tw-mx-8 tw-my-4"
+      ></div>
+      <div
+        class="tw-border-solid tw-border-2 tw-border-primary tw-mx-8 tw-my-4"
+      ></div>
+      <div
+        class="tw-border-solid tw-border-2 tw-border-primary tw-mx-8 tw-my-4"
+      ></div>
+      <div class="tw-flex-auto"></div>
+      <div class="tw-text-center tw-text-accent_contrast tw-m-5">
+        Terms and Conditions
+      </div>
+    </div>
+  </div>
+  <div class="tw-col-span-5">
+    <mat-toolbar color="primary">
+      <img
+        src="https://raw.githubusercontent.com/JOBJACK/JJ-Angular-Material-navigation/main/src/assets/jobjack.png"
+        alt="test"
+        style="width: 150px"
+        class="tw-mr-5"
+      />
+      <span class="tw-text-xs tw-mx-2">All jobs</span>
+      <span class="tw-text-xs tw-mx-2">My jobs</span>
+      <span class="tw-text-xs tw-mx-2">Notification</span>
+      <span class="tw-text-xs tw-mx-2">Resources</span>
+      <div class="tw-flex-auto"></div>
+      <button
+        color="accent"
+        class="tw-float-right"
+        mat-mini-fab
+        aria-label="Example icon button with a home icon"
+      >
+        <!-- <mat-icon svgIcon="home">home</mat-icon> -->
+      </button>
+    </mat-toolbar>
+    <div class="tw-m-3 tw-text-sm" [formGroup]="myForm">
+      <mat-form-field class="tw-mr-4">
+        <mat-label>Select Primary Colour</mat-label>
+        <input
+          matInput
+          [ngxMatColorPicker]="pickerPrimary"
+          formControlName="colorCtrPrimary"
+        />
+        <ngx-mat-color-toggle
+          matSuffix
+          [for]="pickerPrimary"
+        ></ngx-mat-color-toggle>
+        <ngx-mat-color-picker
+          #pickerPrimary
+          [touchUi]="touchUi"
+          [color]="colorPrimary"
+        ></ngx-mat-color-picker>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Select Accent Colour</mat-label>
+        <input
+          matInput
+          [ngxMatColorPicker]="pickerAccent"
+          formControlName="colorCtrAccent"
+        />
+        <ngx-mat-color-toggle
+          matSuffix
+          [for]="pickerAccent"
+        ></ngx-mat-color-toggle>
+        <ngx-mat-color-picker
+          #pickerAccent
+          [touchUi]="touchUi"
+          [color]="colorAccent"
+        ></ngx-mat-color-picker>
+      </mat-form-field>
+    </div>
+    <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-m-5">
+      <mat-card class="tw-bg-primary_100 hover:tw-bg-primary elevated tw-h-60">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image />
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+      <mat-card class="tw-bg-primary_100 tw-elevated tw-h-60">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image />
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+      <mat-card class="tw-bg-primary_100 tw-elevated tw-h-60">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image />
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+      <mat-card class="tw-bg-accent_100 tw-elevated tw-col-span-2 tw-h-80">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image />
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+      <mat-card class="tw-bg-accent_100 tw-elevated tw-h-80">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image />
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+      <mat-card class="tw-bg-primary_100 tw-elevated tw-h-60">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image />
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+      <mat-card class="tw-bg-primary_100 tw-elevated tw-col-span-2 tw-h-60">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title></mat-card-title>
+          <mat-card-subtitle></mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image />
+        <mat-card-content>
+          <p></p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
